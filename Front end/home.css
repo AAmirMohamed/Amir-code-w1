@@ -1,0 +1,102 @@
+ body
+ {
+    background-color: plum;
+  
+ }
+header
+{
+    border-bottom: solid 3px black;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: Impact,
+    Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+a
+{
+    width: 40%;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px black;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+}
+a:hover
+{
+  background-color: plum;
+}
+
+.slid
+{
+    background-color: white;
+    width: 400%;
+    height: 60%;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+   
+}
+
+.dsty
+{
+   
+    border: solid 7px black;
+   
+    height: 380px;
+ 
+}
+.dsty1
+{
+    border: solid 7px black;
+   
+    height: 380px;
+ 
+}
+.dsty2
+{
+    border: solid 7px black;
+    
+    height: 380px;
+ 
+}
+.dsty3
+{
+    border: solid 7px black;
+    overflow: hidden;
+    height: 380px;
+ 
+}
+button
+{
+    width: 30%;
+    background-color: peachpuff;
+    font-size: 30px;
+    margin-left: 50%;
+}
+
+.d{
+    display: flex;
+    overflow: hidden;
+}
+.hid
+{
+    overflow: hidden;
+}
+footer
+{
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    display: flex;
+    padding: auto;
+    font-size: 25px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+
+  <!-- Login Form -->
+  <form id="loginForm" onsubmit="login()">
+    <h1>Login</h1>
+    <label for="loginName">Username:</label>
+    <input type="text" id="loginName">
+    <label for="loginPass">Password:</label>
+    <input type="password" id="loginPass">
+    <button type="submit">Login</button>
+    <br>
+    <a href="#forForm">Forget Password</a>
+    <br>
+    Don't have an account?
+    <a href="#signupForm">Sign Up</a>
+  </form>
+  <br>
+
+  <!-- Sign Up Form -->
+  <div class="signup-container">
+    <form>
+      <label for="username">username</label>
+      <input type="text" id="username2">
+      <br>
+      <label for="email">email</label>
+      <input type="text" id="email">
+      <br>
+      <label for="password">password2</label>
+      <input type="password" id="password2">
+      <br>
+      <input type="radio" name="q" id="male">
+      <label for="radio">male</label>
+      <input type="radio" name="q" id="female">
+      <label for="radio">female</label>
+      <br>
+      <label for="num">number</label>
+      <input type="text" id="num">
+      <br>
+      <label>age</label>
+      <input type="text" id="age">
+      <button onclick="signupform()">sign up</button>
+    </form>
+  </div>
+  <br>
+
+  <!-- Forget Password Form -->
+  <form id="forForm">
+    <h1>Forget Password</h1>
+    <label for="forgetName">Username</label>
+    <input type="text" id="forgetName">
+    <label for="forgetNewPass">New Password</label>
+    <input type="password" id="forgetNewPass">
+    <button type="submit" onclick="update()">Update</button>
+  </form>
+
+  <script src="Login.js">  </script>
+
+</body>
+
+</html>

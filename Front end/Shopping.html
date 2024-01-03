@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        header {
+            border-bottom: solid 3px black;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border: solid 1px black;
+            font-size: 30px;
+            background-color: white;
+            color: black;
+            margin: 5px;
+            padding: 10px 20px;
+        }
+
+        a:hover {
+            background-color: plum;
+        }
+
+        .container {
+            border: solid 7px black;        
+            height: 380px;        
+            margin-left: auto;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        h1, h3 {
+            margin: 0;
+            margin-left: auto;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .cart {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0, 0.4);
+        }
+
+        .cart-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .showCartButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+
+        #myCart img {
+            display: block;
+            margin: 0 auto;
+        }
+        .slid
+        {
+            background-color: white;
+            border: 5px solid black;
+            margin-left: 20px;
+            width: 100%;
+            height: 60%;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            border: solid 7px black;        
+            height: 880px;        
+            /* max-width: 600px; */
+            padding: 20px;
+        }
+        /* .dsty
+        {
+            border: solid 7px black;        
+            height: 380px;        
+        } */
+        footer {
+            border-top: solid 3px black;
+            border-bottom: solid 3px black;
+            display: flex;
+            padding: auto;
+            font-size: 25px; 
+        }
+
+        footer div {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Application Name</h1>
+    </header>
+
+    <center>
+        <header>
+           <h1>Shopping cart</h1>
+           <a href="#clothes"><a href="home.html">Clothes</a></a>
+           <a href="#shoes"><a href="home.html">Shoes</a></a>
+           <a href="#bags"><a href="home.html">Bags</a></a>
+           <a href="#watches"><a href="home.html">Watches</a></a>
+        </header>
+    </center>
+
+    <div class="slid" >
+        <div id="1" class="dsty" style="display: flex;"> 
+            <div>
+                <div>
+                    <img src="air.png" alt="" width="50%" style="padding: 20px;">  
+                <p>Hoodie with pouch pocket        </p>
+                <p> mine / 5</p>
+                <input type="number"  -  1  + > 
+                <button type="button" onclick="go()">buy</button>
+                </div>
+                <div id="1" class="dsty">
+                    <img src="air2.png" alt="" width="50px" height="50px" style="padding: 20px;">
+                    <p>Hoodie with pouch pocket </p>
+                    <p> mine / 5</p>
+                    <input type="number"  -  1  + > 
+                    <button type="button" onclick="go()">buy</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <h1>Checkout</h1>
+                <div class="row">
+                    <div class="column">
+                        <h3>Subtotal</h3>
+                        <p>Shipping</p>
+                        <p>Total</p>
+                    </div>
+                    <div class="column">
+                        <h3>USD $170.00</h3>
+                        <p>USD $150.00</p>
+                        <p>USD $20.00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <button>Check Out</button>
+                </div>
+            </div>  
+        </div>
+    <br>  <br>  <br>  <br>
+    <footer>
+        <div >
+        <p >baranches:</p>
+        <pre> baranches in oc  </pre>
+        <pre> baranches in oc  giz  </pre>
+        </div>
+        <div>
+        <p >contacts:</p>
+        <pre> baranches in oc  </pre>
+        <pre> baranches in oc  giz  </pre>
+    </div>
+    <div>
+        <p>accounts:</p>
+        <pre> baranches in oc  </pre>
+        <pre> baranches in oc  giz  </pre>
+    </div>
+    </footer>
+
+
+</body>
+</html>

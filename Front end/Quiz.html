@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+   }
+   
+   .review-form {
+    margin: 50px auto;
+    width: 300px;
+   }
+   
+   h1 {
+    text-align: center;
+   }
+   
+   table {
+    width: 100%;
+   }
+   
+   td {
+    padding: 10px;
+   }
+   
+   button {
+    margin-top: 20px;
+    width: 100%;
+   }
+  </style>
+</head>
+
+<body>
+ <div class="review-form">
+    <form id="review-form">
+      <h1>Review Form</h1>
+      <table>
+        <tr>
+          <td>Q1. Are you satisfied with our service?</td>
+          <td>
+            <input type="radio" name="q1" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="q1" value="no">
+            <label for="no">No</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Q2. Do you find our website user-friendly?</td>
+          <td>
+            <input type="radio" name="q2" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="q2" value="no">
+            <label for="no">No</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Q3. Would you recommend us to others?</td>
+          <td>
+            <input type="radio" name="q3" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="q3" value="no">
+            <label for="no">No</label>
+          </td>
+        </tr>
+      </table>
+      <button type="submit">Submit</button>
+    </form>
+ </div>
+
+    <script>
+
+      document.getElementById('review-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+      
+        var q1 = document.querySelector('input[name="q1"]:checked').value;
+        var q2 = document.querySelector('input[name="q2"]:checked').value;
+        var q3 = document.querySelector('input[name="q3"]:checked').value;
+      
+        var totalYes = 0;
+        if (q1 === 'yes') totalYes++;
+        if (q2 === 'yes') totalYes++;
+        if (q3 === 'yes') totalYes++;
+      
+        alert(`Thank you for your feedback! Total "Yes" points: ${totalYes}`);
+      });
+      
+    </script>
+</body>
+</html>
